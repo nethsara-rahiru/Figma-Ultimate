@@ -1,0 +1,32 @@
+<!-- Figma Ultimate - index.html --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Figma Ultimate</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Figma Ultimate</h1>
+    <div>
+      <button onclick="showPage('home')">Home</button>
+      <button onclick="showPage('editor')">Editor</button>
+      <button onclick="showPage('export')">Export</button>
+    </div>
+  </nav>  <section id="home" class="page">
+    <h2>Welcome to Figma Ultimate</h2>
+    <p>Design responsive UI and export as PNG, SVG, PDF, HTML & CSS</p>
+  </section>  <section id="editor" class="page hidden">
+    <div class="toolbar">
+      <button onclick="addComponent('button')">Add Button</button>
+      <button onclick="addComponent('text')">Add Text</button>
+      <button onclick="addComponent('input')">Add Input</button>
+    </div>
+    <div id="canvas" class="canvas"></div>
+  </section>  <section id="export" class="page hidden">
+    <h2>Export Your Design</h2>
+    <button onclick="exportAsPNG()">Download PNG</button>
+    <button onclick="exportAsHTML()">Download HTML/CSS</button>
+  </section>  <script src="script.js"></script></body>
+</html>
